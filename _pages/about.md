@@ -21,9 +21,7 @@ My research area is natural language processing (NLP) in low-resource settings, 
 
 ### Recent News
 
-* 6/2024: I got tenure!
-
-* 5/2024: RA and senior thesis student Gavin Zhang was awarded the McCarthy Prize for his senior thesis: A framework for formalizing and automating interpretability. Gavin also won the Neuhauser Award. Congratulations, Gavin!
+* 5/2024: RA and senior thesis student Gavin Zhang was recognized as a Scholar of the College and awarded the McCarthy Prize for his senior thesis: A framework for formalizing and automating interpretability. Gavin also won the Neuhauser Award. Congratulations, Gavin!
 
 * 4/2024: PhD student Robbie Jimerson successfully defended his dissertation: Exploring speech recognition for documenting Seneca, an acutely under resourced Native American language. Congratulations, Robbie!
 
