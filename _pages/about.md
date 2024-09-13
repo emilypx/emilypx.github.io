@@ -19,6 +19,11 @@ My research area is natural language processing (NLP) in low-resource settings, 
 
 ---
 
+### [Publications](http://cs.bc.edu/~prudhome/publications.html)
+
+
+### [Teaching](http://cs.bc.edu/~prudhome/teaching.html)
+
 ### Recent News
 
 * 5/2024: RA and senior thesis student Gavin Zhang was recognized as a Scholar of the College and awarded the McCarthy Prize for his senior thesis: A framework for formalizing and automating interpretability. Gavin also won the Neuhauser Award. Congratulations, Gavin!
