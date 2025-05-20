@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Emily Tucker Prud'hommeaux"
+title: ""
 author_profile: true
 redirect_from: 
   - /about/
@@ -8,11 +8,11 @@ redirect_from:
 ---
 
 
-**Office:** 245 Beacon, CS Department, 4th Floor\
+**Office:** 245 Beacon, CS Department, 4th Floor
 
-**Telephone:** 617-552-3928\
+**Telephone:** 617-552-3928
 
-**Email:** prudhome@bc.edu\
+**Email:** prudhome@bc.edu
 
 My research area is natural language processing (NLP) in low-resource settings, with a particular focus on endangered languages, child language, and the language of individuals with conditions impacting communication and cognition. Before coming to BC, I was an assistant professor at RIT, where I co-founded the Computational Linguistics and Speech Processing lab. Before that I was a postdoc at the University of Rochester, and before getting my PhD at the former OGI (now OHSU), I worked for several years in the language modeling group at Nuance.
 
