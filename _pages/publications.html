@@ -11,26 +11,269 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<p><i>* denotes graduate or post-doctoral advisee<br> ** denotes undergradute advisee<br>&dagger; denotes other student researcher</i>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Hunter Scheppat**, Joshua Hartshorne, Dylan Leddy**, Éric Le Ferrand*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2025. Integrating diverse corpora for training an endangered language machine translation system. To appear in <i>Proceedings of the Eighth Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-8)</i>.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in"> Jane Flanagan, Maureen Connolly, Amanda Coakley,  Michael Fugate, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Colin Young&dagger;. 2025. <a href="https://www.tandfonline.com/doi/full/10.1080/13607863.2024.2445137">The Needs of Informal Caregivers of People Experiencing Dementia as Identified on Social Media</a>. <i> Aging and Mental Health</i>, 29(4):679–686</p>
+
+
+  
+
+<p style="margin-left:.25in;text-indent:-.25in">Éric Le Ferrand*, Zoey Liu, Antti Arppe, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. <a href="https://aclanthology.org/2024.findings-emnlp.166/">Are modern neural ASR architectures robust for polysynthetic languages?</a> In <i>Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP Findings)</i>, 2953-2963</p>
+  
+
+<p style="margin-left:.25in;text-indent:-.25in">Allahsera Tapo&dagger;, Éric Le Ferrand*, Zoey Liu, Christopher Homan, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. <a href="https://www.isca-archive.org/interspeech_2024/tapo24_interspeech.pdf">Leveraging Speech Data Diversity to Document Indigenous Heritage and Culture</a>. In <i> Proceedings of the Annual Conference of the International Speech Communication Association (Interspeech)</i>, 5088-5092.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu, Nitin Venkateswaran&dagger;, Éric Le Ferrand*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. <a href="https://aclanthology.org/2024.findings-acl.13.pdf">How Important is a Language Model for Low-resource ASR?</a> In <i>Findings of the Association for Computational Linguistics (ACL Findings)</i>, 206-213.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Éric Le Ferrand*, Raina Heaton,  and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. <a href="https://aclanthology.org/2024.americasnlp-1.15.pdf">Enenlhet as a case-study to investigate ASR model generalizability for language documentation</a>. In <i>Proceedings of the Fourth Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP)</i>, 132-137.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Éric Le Ferrand*  and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. <a href="https://aclanthology.org/2024.computel-1.6.pdf">Automatic Transcription of Grammaticality Judgements for Language Documentation</a>. In <i>Proceedings of the Seventh Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-7)</i>, 33-38.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Vigneshwar Lakshminarayanan* and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. <a href="https://aclanthology.org/2024.dravidianlangtech-1.5.pdf">Exploring the impact of noise in low-resource ASR for Tamil</a>. In <i>Proceedings of the Fourth Workshop on Speech, Vision, and Language Technologies for Dravidian Languages (DravidianLangTech-2024)</i>, 30-34</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2023. <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00624/118857/Data-driven-Parsing-Evaluation-for-Child-Parent">Data-driven Parsing Evaluation for Child-Parent Interactions</a>. <i>Transactions of the Association for Computational Linguistics (TACL)</i> 11:1734-1753.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Robbie Jimerson*, Zoey Liu, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2023. <a href="https://aclanthology.org/2023.acl-short.87.pdf">An (unhelpful) guide to selecting the best ASR architecture for your under-resourced language</a>. In <i>Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 1008-1016.
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, Justin Spence, and  <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2023. <a href="https://aclanthology.org/2023.eacl-main.10.pdf">Investigating data partitioning strategies for crosslinguistic low-resource ASR evaluation</a>. In <i>Proceedings of the Annual Meeting of the European Association for Computational Linguistics (EACL)</i>, 123-131.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, Justin Spence, and  <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2023. <a href="https://aclanthology.org/2023.computel-1.11.pdf">Studying the impact of language model size for low-resource ASR</a>. In <i>Proceedings of the Sixth Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-6),</i> 3412-3419.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Joshua Hartshorne. 2022. <a href="https://escholarship.org/uc/item/86j2x3t2">Data-driven Crosslinguistic Syntactic Transfer in Second Language Learning</a>. In <i>Proceedings of the Annual Meeting of the Cognitive Science Society (CogSci)</i>, 1903-1911.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Joseph Bochner, Vincent Samar, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Matt Huenerfauth. 2022. <a href="https://pubs.asha.org/doi/10.1044/2022_JSLHR-22-00038?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Phoneme Categorization in Prelingually Deaf Adult Cochlear Implant Users</a>. <i> Journal of Speech, Language, and Hearing Research</i> 65(11):4429-4453.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Duanchen Liu**, Zoey Liu*, Qingyun Yang**, Yujing Huang*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2022. <a href="https://aclanthology.org/2022.coling-1.301.pdf">Evaluating the Performance of Transformer-based Language Models for Neuroatypical Language</a>. In <i>Proceedings of the 29th International Conference on Computational Linguistics (COLING)</i>, 3412-3419.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Ronit Damiana&dagger;, Christopher Homan, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2022. <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2022/damania22_interspeech.pdf">Combining Simple but Novel Data Augmentation Methods for Improving Conformer ASR</a>. In <i>Proceedings of the Annual Conference of the International Speech Communication Association (Interspeech)</i>, 4890-4894.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, Crystal Richardson&dagger;, Richard Hatcher&dagger;, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2022. <a href="https://aclanthology.org/2022.acl-long.272.pdf">Not always about you: Prioritizing community needs when developing endangered language technology</a>. In <i>Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 3933-3944.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Khuyagbaatar Batsuren, Omer Goldman, Salam Khalifa, Nizar Habash, Witold Kieraś, Gábor Bella, Brian Leonard, Garrett Nicolai, Kyle Gorman, Yustinus Ghanggo Ate, Maria Ryskina, Sabrina Mielke, Elena Budianskaya, Charbel El-Khaissi, Tiago Pimentel, Michael Gasser, William Abbott Lane, Mohit Raj, Matt Coler, Jaime Rafael Montoya Samame, Delio Siticonatzi Camaiteri, Esaú Zumaeta Rojas, Didier López Francis, Arturo Oncevay, Juan López Bautista, Gema Celeste Silva Villegas, Lucas Torroba Hennigen, Adam Ek, David Guriel, Peter Dirix, Jean-Philippe Bernardy, Andrey Scherbakov, Aziyana Bayyr-ool, Antonios Anastasopoulos, Roberto Zariquiey, Karina Sheifer, Sofya Ganieva, Hilaria Cruz, Ritván Karahóǧa, Stella Markantonatou, George Pavlidis, Matvey Plugaryov, Elena Klyachko, Ali Salehi, Candy Angulo, Jatayu Baxi, Andrew Krizhanovsky, Natalia Krizhanovskaya, Elizabeth Salesky, Clara Vania, Sardana Ivanova, Jennifer White, Rowan Hall Maudslay, Josef Valvoda, Ran Zmigrod, Paula Czarnowska, Irene Nikkarinen, Aelita Salchak, Brijesh Bhatt, Christopher Straughn, Zoey Liu, Jonathan North Washington, Yuval Pinter, Duygu Ataman, Marcin Wolinski, Totok Suhardijanto, Anna Yablonskaya, Niklas Stoehr, Hossep Dolatian, Zahroh Nuriah, Shyam Ratan, Francis M. Tyers, Edoardo M. Ponti, Grant Aiton, Aryaman Arora, Richard J. Hatcher, Ritesh Kumar, Jeremiah Young, Daria Rodionova, Anastasia Yemelina, Taras Andrushko, Igor Marchenko, Polina Mashkovtseva, Alexandra Serova, <span style="font-weight: bold;">Emily Prud’hommeaux</span>, Maria Nepomniashchaya, Fausto Giunchiglia, Eleanor Chodroff, Mans Hulden, Miikka Silfverberg, Arya D. McCarthy, David Yarowsky, Ryan Cotterell, Reut Tsarfaty, Ekaterina Vylomova. 2022. <a href="https://aclanthology.org/2022.lrec-1.89.pdf">UniMorph 4.0: Universal Morphology</a>. In <i>Proceedings of the Thirteenth Language Resources and Evaluation Conference (LREC)</i>, 840–855.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, Justin Spence, and <span style="font-weight: bold;">Emily Prud’hommeaux</span>. 2022. <a href="https://aclanthology.org/2022.computel-1.23.pdf">Enhancing Documentation of Hupa with Automatic Speech Recognition</a>. In <i>Proceedings of the Fifth Workshop on the Use of Computational Methods in the Study of Endangered Languages (ComputEL-5)</i>, 187-192.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu* and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2022. <a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00467/110437/Data-driven-Model-Generalizability-in">Data-driven model generalizability in crosslinguistic low-resource morphological segmentation</a>. <i>Transactions of the Association for Computational Linguistics (TACL)</i> 10:393-413.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span>, Robbie Jimerson*, Richard Hatcher&dagger;, and Karin Michelson. 2021. <a href="https://scholarspace.manoa.hawaii.edu/server/api/core/bitstreams/26207ea6-7b86-4fe8-8d95-864ac3ea2e9e/content">Automatic speech recognition for supporting endangered language documentation</a>. <i> Language Documentation and Conservation</i> 15:491-513.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Ethan Morris*, Robbie Jimerson*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2021. <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2021/morris21_interspeech.pdf">One size does not fit all in resource-constrained ASR</a>. In <i>Proceedings of the Annual Conference of the International Speech Communication Association (Interspeech)</i>, 4354-4358.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Robert Gale, Julie Bird, Yiyi Wang*, Jan van Santen, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Jill Dolata, and Meysam Asgari. 2021. <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.668401/full">Automated Scoring of Tablet-Administered Expressive Language Tests</a>. <i> Frontiers in Psychology</i> 12:2986-2996.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Christine Yang**, Dora Liu**, Qingyun Yang**, Zoey Liu*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2021. <a href="https://aclanthology.org/2021.acl-srw.29/">Predicting pragmatic discourse features in the language of adults with autism spectrum disorder</a>. In <i>Proceedings of the Association for Computational Linguistics Student Research Workshop (ACL-IJCNLP SRW)</i>, 284–291.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Zoey Liu*, Robbie Jimerson*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2021.  <a href="https://www.aclweb.org/anthology/2021.americasnlp-1.10.pdf">Morphological Segmentation for Seneca</a>. In <i>Proceedings of the First Workshop on NLP for Indigenous Languages of the Americas (AmericasNLP)</i>, 90-101.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Zoey Liu* and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2021. <a href="https://www.aclweb.org/anthology/2021.adaptnlp-1.16.pdf">Dependency Parsing Evaluation for Low-resource Spontaneous Speech</a>. In <i>Proceedings of the Second Workshop on Domain Adaptation for NLP (Adapt-NLP)</i>, 156-165.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Tiago Pimentel, Maria Ryskina, Sabrina J Mielke, Shijie Wu, Eleanor Chodroff, Brian Leonard, Garrett Nicolai, Yustinus Ghanggo Ate, Salam Khalifa, Nizar Habash, Charbel El-Khaissi, Omer Goldman, Michael Gasser, William Lane, Matt Coler, Arturo Oncevay, Jaime Rafael Montoya Samame, Gema Celeste Silva Villegas, Adam Ek, Jean-Philippe Bernardy, Andrey Shcherbakov, Aziyana Bayyr-ool, Karina Sheifer, Sofya Ganieva, Matvey Plugaryov, Elena Klyachko, Ali Salehi, Andrew Krizhanovsky, Natalia Krizhanovsky, Clara Vania, Sardana Ivanova, Aelita Salchak, Christopher Straughn, Zoey Liu, Jonathan Washington, Duygu Ataman, Witold Kieraś, Marcin Woliński, Totok Suhardijanto, Niklas Stoehr, Zahroh Nuriah, Shyam Ratan, Francis Tyers, Edoardo M Ponti, Grant Aiton, Richard J Hatcher, <span style="font-weight: bold;">Emily Prud’hommeaux</span>, Ritesh Kumar, Mans Hulden, Botond Barta, Dorina Lakatos, Gábor Szolnok, Judit Ács, Mohit Raj, David Yarowsky, Ryan Cotterell, Ben Ambridge, Ekaterina Vylomova. 2021. <a href="https://aclanthology.org/2021.sigmorphon-1.25.pdf">Sigmorphon 2021 shared task on morphological reinflection: Generalization across languages</a>. In <i>Proceedings of the 18th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology</i>, 229-259.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Preethi Vaidyanathan*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Alm, C.O., and Pelz, J.B. 2020. <a href="https://jov.arvojournals.org/article.aspx?articleid=2770330">Computational framework for fusing eye movements and spoken narratives for image annotation</a>. <i> Journal of Vision</i>, 20(7):1-28.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Yiyi Wang*, <span style="font-weight: bold;">Emily Prud’hommeaux</span>, Meysam Asgari, and Jill Dolata. 2020. <a href="https://www.aclweb.org/anthology/2020.bea-1.18.pdf">Automated Scoring of Clinical Expressive Language Evaluation Tasks</a>. In <i>Proceedings of the 15th Workshop on Innovative Use of NLP for Building Educational Applications (BEA)</i>, 132-137.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Robert Gale, Meysam Asgari, Jill Dolata, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Jan van Santen. 2020. <a href="https://ieeexplore.ieee.org/document/9175264">Automatic  Assessment  of  Language  Disorders  in  Children  with  and without  Typical  Development</a>. In <i> Proceedings of the Annual Conference of the IEEE Engineering in Medicine and Biology Society</i>, 6111–6114.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Christine Yang**, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Laura Silverman, and Allison Canfield. 2020. <a href="http://cs.bc.edu/~prudhome/papers/YangEtAl2020-ASDRaPiD.pdf">Toward Characterizing the Language of Adults with Autism in Collaborative Discourse</a>. In <i> Proceedings of the Workshop on Resourcess and ProcessIng of linguistic, para-linguistic and extra-linguistic data from people with various forms of cognitive, psychiatric, developmental impairments (RaPID-3)</i>, 54-59.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Bao Thai&dagger;, Robbie Jimerson*, Raymond Ptucha, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2020. <a href="http://cs.bc.edu/~prudhome/papers/ThaiEtAl2020-ASRforSLTU.pdf">Fully Convolutional ASR for Less-Resourced Endangered Languages</a>. In <i> Proceedings of the Workshop on Spoken Language Technologies for Under-resourced Languages (SLTU-CCURL)</i>, 126-130.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Bao Thai&dagger;, Robbie Jimerson*, Dominic Arcoraci&dagger;, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Raymond Ptucha. 2019. <a href="https://ieeexplore.ieee.org/document/8923082">Synthetic data augmentation for improving low-resource ASR</a>. In <i> Proceedings of the IEEE Western New York Image and Signal Processing Workshop (WNYISPW)</i>, 1-9. Best paper award, runner-up.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Benjamin Meyers&dagger;, Nuthan Munaiah&dagger;, Andy Meneely, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>.  2019. <a href="https://dl.acm.org/citation.cfm?id=3338718.3338737">Pragmatic Characteristics of Security Conversations: An Exploratory Linguistic Analysis.</a> In <i> Proceedings of the 12th International Workshop on Cooperative and Human Aspects of Software Engineering (CHASE)</i>, 79-82.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Preethi Vaidyanathan*, <span style="font-weight: bold;">Emily Prud’hommeaux</span>, Jeff Pelz, Cecilia Ovesdotter Alm. 2018. <a href="http://www.aclweb.org/anthology/P18-2022">SNAG: Spoken Narratives and Gaze Dataset</a>. In <i>Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 132-137.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Benjamin Meyers**, Nuthan Munaiah&dagger;, <span style="font-weight: bold;">Emily Prud’hommeaux</span>, Andy Meneely, Josephine Wolff, Cecilia O. Alm, and Pradeep Murukannaiah. 2018. <a href="http://www.aclweb.org/anthology/P18-2021">A dataset for identifying actionable feedback in collaborative software development</a>. In <i>Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (ACL)</i>, 126-131.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Robbie Jimerson*, Kruthika Simha&dagger;, Raymond Ptucha, and <span style="font-weight: bold;">Emily Prud’hommeaux</span>. 2018. <a href="https://www.isca-speech.org/archive/pdfs/sltu_2018/jimerson18_sltu.pdf">Improving ASR output for endangered language documentation</a>. In <i>Proceedings of the 6th Workshop on Spoken Language Technologies for Under-resourced Languages (SLTU)</i>, 182-186.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Robbie Jimerson* and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2018. <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/749.pdf">ASR for documenting acutely under-resourced indigenous languages</a>. In <i>Proceedings of the 2018 Language Resources and Evaluation Conference (LREC)</i>, 4161-4166.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">David Nester**, Nikita Haduong**, Preethi Vaidyanathan*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Reynold Bailey, and Cecilia O. Alm. 2018. <a href="https://aaai.org/ocs/index.php/WS/AAAIW18/paper/view/17021/15544">Multimodal Alignment for Affective Content</a>. In <i>Proceedings of the AAAI-18 Workshop on Affective Content Analysis (AffCon)</i>, 21-28.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span>, Jan van Santen, and Douglas Gliner**. 2017. <a href="http://www.aclweb.org/anthology/P17-2006">Vector space models for evaluating semantic fluency in autism</a>. In <i>Proceedings of 2017 Meeting of the Association for Computational Linguistics (ACL)</i>, 32-37.</p>
+
+<p  style="margin-left:.25in;text-indent:-.25in"> Cecilia O. Alm, Benjamin S. Meyers**, and <span style="font-weight: bold;">Emily Prud’hommeaux</span>. 2017. <a href="http://aclweb.org/anthology/D17-2003">An Analysis and Visualization Tool for Case Study Learning of Linguistic Concepts</a>. In <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing Demo Session (EMNLP)</i>, 13-18.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Nuthan Munaiah&dagger;, Benjamin S. Meyers**, Cecilia O. Alm, Andrew Meneely, Pradeep Murukannaiah, <span style="font-weight: bold;"> Emily Prud’hommeaux</span>, Josephine Wolff, Yang Yu. 2017. <a href="https://link.springer.com/chapter/10.1007/978-3-319-62105-0_5">Natural Language Insights from Code Reviews that Missed a Vulnerability: A Large Scale Study of Chromium</a>. In: Bodden E., Payer M., Athanasopoulos E. (eds) <i>Engineering Secure Software and Systems (ESSoS 2017). Lecture Notes in Computer Science</i>, vol. 10379, Springer, 70-86.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Shagan Sah, Sourabh Kulhare, Allison Gray, Subhashini Venugopalan, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Raymond Ptucha. 2017. <a href="https://www.cs.utexas.edu/~vsub/pdf/wacv-semantic-text.pdf">Semantic Text Summarization of Long Videos</a>. In <i>Proceedings of the IEEE Winter Conference on Applications of Computer Vision (WACV)</i>, 989-997.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Aliya Gangji**, Trevor Walden**, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Reynold Bailey, and Cecilia Ovesdotter Alm. 2017. <a href="http://aaai.org/ocs/index.php/WS/AAAIW17/paper/view/15116/14725">Using co-captured face, gaze and verbal reactions to images of varying emotional content for analysis and semantic alignment</a>. In <i>Proceedings of the Workshop on Human-Aware Artificial Intelligence (HAAI)</i>, 621-627.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Andamlak Terkik*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Cecilia O. Alm, Christopher Homan, and Scott Franklin. 2016. <a href="http://www.aclweb.org/anthology/C/C16/C16-1083.pdf">Analyzing Gender Bias in Student Evaluations</a>. In <i>Proceedings of the 26th International Conference on Computational Linguistics (COLING)</i>, 868-876.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Preethi Vaidyanathan*, Jeff Pelz, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Cecilia O. Alm, and Anne Haake. 2016. <a href="http://dl.acm.org/citation.cfm?id=2857542">Fusing eye movements and observer narratives for expert-driven image-region annotations</a>. In <i>Proceedings of the ACM Symposium on Eye-Tracking Research and Applications (ETRA)</i>, 27-34. <strong><a href="https://twitter.com/theofficialacm/status/716285381738700802">Best Paper Award</a></strong></p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Mayuresh Oak&dagger;, Anil Behera&dagger;, Titus Thomas&dagger;, Cecilia Ovesdotter Alm, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Christopher Homan, and Raymond Ptucha. 2016. <a href="https://www.aclweb.org/anthology/W/W16/W16-0309.pdf">Generating Clinically Relevant Texts: A Case Study on Life-Changing Events.</a> In <i>Proceedings of  the NAACL 2016 Workshop on Computational Linguistics and Clinical Psychology (CLPSych)</i>, 85-94.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span> and Brian Roark. 2015. <a href="http://www.mitpressjournals.org/doi/pdf/10.1162/COLI_a_00232">Graph-based word alignment for clinical language evaluation</a>. <i>Computational Linguistics,</i> 41(4):549–578.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Masoud Rouhizadeh&dagger;, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Jan van Santen, and Richard Sproat. 2015. <a href="http://www.aclweb.org/anthology/P15-2035">Measuring idiosyncratic interests in children with autism</a>. In <i>Proceedings of 53rd Annual Meeting of the Association for Computational Linguistics (ACL),</i> 212–217.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"> Preethi Vaidyanathan*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Cecilia O. Alm, Jeff B. Pelz, and Anne R. Haake. 2015. <a href="http://www.aclweb.org/anthology/W15-0111">Alignment of eye movements and spoken language for semantic image understanding</a>. In <i>Proceedings of the International Workshop on Computational Semantics (IWCS)</i>, 76-81.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in"> <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Eric Morley&dagger;, Masoud Rouhizadeh&dagger;, Laura Silverman, Jan van Santen, Brian Roark, Richard Sproat, Sarah Kauper&dagger;, and Rachel DeLaHunta&dagger;. 2014. <a href="https://ieeexplore.ieee.org/document/7078585">Computational analysis of trajectories of linguistic development in autism.</a> In <i>Proceedings of the IEEE Spoken Language Technology Workshop (SLT)</i>, 266–271.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Masoud Rouhizadeh&dagger;, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Jan van Santen, and Richard Sproat. 2014. <a href="http://acl2014.org/acl2014/W14-32/pdf/W14-3206.pdf">Detecting linguistic idiosyncratic interests in autism using distributional semantic models</a>. In <i>Proceedings of the ACL 2014 Workshop on Computational Linguistics and Clinical Psychology</i>, 46–50.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in"> Erin&ccedil; Dikici&dagger;,  <span style="font-weight: bold;">Emily Prud’hommeaux</span>, Brian Roark, Murat Sara&ccedil;lar. 2013. <a href="https://pdfs.semanticscholar.org/dee1/974fc0c1351cb43186b9ed97673f79a1010c.pdf">Investigation of MT-based ASR Confusion Models for Semi-Supervised Discriminative Language Modeling</a>. In <i>Proceedings of the 13th Annual Conference of the International Speech Communication Association (Interspeech)</i>, 1217–1221.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Masoud Rouhizadeh&dagger;, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Brian Roark and Jan van Santen. 2013. <a href="http://www.anthology.aclweb.org/N/N13/N13-1084.pdf">Distributional semantic models for the evaluation of disordered language</a>. In <i>Proceedings of the Human Language Technology Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT)</i>, 709-714.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Maider Lehr&dagger;, Izhak Shafran, <span style="font-weight: bold;">Emily Prud'hommeaux</span> and Brian Roark. 2013. <a href="http://www.aclweb.org/anthology/N13-1021">Discriminative joint modeling of lexical variation and acoustic confusion for automated narrative retelling assessment</a>. In <i>Proceedings of the Human Language Technology Conference of the North American Chapter of the Association for Computational Linguistics (NAACL-HLT)</i>, 211–220.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Maider Lehr, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Izhak Shafran and Brian Roark. 2012. <a href="https://pdfs.semanticscholar.org/e679/093d40366746a4a2db82aa039ae20fda14f5.pdf">Fully automated neuropsychological assessment for detecting Mild Cognitive Impairment</a>. In <i>Proceedings of the 13th Annual Conference of the International Speech Communication Association (Interspeech),</i> 1039-1042.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Geza Kiss, Jan P.H. van Santen, <span style="font-weight: bold;">Emily Tucker Prud'hommeaux</span> and Lois M. Black. 2012. <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2012/kiss12_interspeech.pdf">Quantitative analysis of pitch in speech of children with neurodevelopmental disorders</a>. In <i>Proceedings of the 13th Annual Conference of the International Speech Communication Association (Interspeech),</i> 1343-1346.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Damianos Karakos, Brian Roark, Izhak Shafran, Kenji Sagae, Maider Lehr, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Puyang Xu, Nathan Glenn, Sanjeev Khudanpur, Murat Sara&ccedil;lar, Dan Bikel, Mark Dredze, Chris Callison-Burch, Yuan Cao, Keith Hall, Eva Hasler, Philip Koehn, Adam Lopez, Matt Post and Darcey Riley. 2012. <a href="http://www.cs.jhu.edu/~mdredze/publications/interspeech_2012_semisup.pdf">Deriving conversation-based features from unlabeled speech for discriminative language modeling.</a> In <i>Proceedings of the 13th Annual Conference of the International Speech Communication Association (Interspeech)</i>, 202-205.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span> and Brian Roark. 2012. <a href="https://aclanthology.org/W12-2401.pdf">Graph-based alignment of narratives for automated neuropsychological assessment</a>. In <i>Proceedings of the NAACL 2012 Workshop on Biomedical Natural Language Processing (BioNLP)</i>, 1-10.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span> and Masoud Rouhizadeh. 2012. <a href="https://www.isca-speech.org/archive/pdfs/wocci_2012/prudhommeaux12_wocci.pdf">Automatic detection of pragmatic deficits in children with autism.</a> In <i>Proceedings of the 3rd Workshop on Child, Computer and Interaction (WOCCI 2012)</i>, 1-6.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Eric Morley and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2012. <a href="https://www.isca-speech.org/archive/pdfs/wocci_2012/morley12_wocci.pdf">Using constituency and dependency parse features to identify errorful words in disordered language</a>. In <i>Proceedings of the 3rd Workshop on Child, Computer and Interaction (WOCCI 2012)</i>, 68-73.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Kenji Sagae, Maider Lehr, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Puyang Xu, Nathan Glenn, Damianos Karakos, Sanjeev Khudanpur, Brian Roark, Murat Sara&ccedil;lar, Izhak Shafran, Daniel Bikel, Chris Callison-Burch, Yuan Cao, Keith Hall, Eva Hasler, Philipp Koehn, Adam Lopez, Matt Post and Darcey Riley. 2012. <a href="https://ieeexplore.ieee.org/document/6289043">Hallucinated n-best lists for discriminative language modeling.</a> In <i> Proceedings of the 37th International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 5001-5004.
+
+<p style="margin-left:.25in;text-indent:-.25in">Puyang Xu, Sanjeev Khudanpur, Maider Lehr, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Nathan Glenn, Damianos Karakos, Brian Roark, Kenji Sagae, Murat Sara&ccedil;lar, Izhak Shafran, Daniel Bikel, Chris Callison-Burch, Yuan Cao, Keith Hall, Eva Hasler, Philipp Koehn, Adam Lopez, Matt Post and Darcey Riley. 2012 <a href="https://ieeexplore.ieee.org/document/6288332">Continuous space discriminative language modeling</a>. In <i> Proceedings of the 37th International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 2129-2132.
+
+<p style="margin-left:.25in;text-indent:-.25in">Arda &Ccedil;elebi, Hasim Sak, Erin&ccedil; Dikici, Murat Sara&ccedil;lar, Maider Lehr, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Puyang Xu, Nathan Glenn, Damianos Karakos, Sanjeev Khudanpur, Brian Roark, Kenji Sagae, Izhak Shafran, Daniel Bikel, Chris Callison-Burch, Yuan Cao, Keith Hall, Eva Hasler, Philipp Koehn, Adam Lopez, Matt Post, Darcey Riley. 2012. <a href="https://ieeexplore.ieee.org/document/6289049">Semi-supervised discriminative language modeling for Turkish ASR.</a> In <i> Proceedings of the 37th International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 5025-5028.
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span> and Brian Roark. 2011. <a href="https://ieeexplore.ieee.org/document/6163979">Alignment of spoken narratives for automated neuropsychological assessment.</a> In <i>Proceedings of the IEEE Workshop on Automatic Speech Recognition and Understanding (ASRU)</i>, 484-489.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span> and Brian Roark. 2011. <a href="https://www.isca-speech.org/archive/pdfs/interspeech_2011/prudhommeaux11_interspeech.pdf">Extraction of narrative recall patterns for neuropsychological assessment</a>. In <i>Proceedings of the 12th Annual Conference of the International Speech Communication Association (Interspeech)</i>, 3021-3024.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Brian Roark, Lois M. Black, Jan van Santen. 2011. <a href="http://aclweb.org/anthology-new/W/W11/W11-06.pdf">Classification of atypical language in autism</a>. In <i>Proceedings of the 2nd Workshop on Cognitive Modeling and Computational Linguistics (CMCL)</i>, 88-96.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Jan van Santen, <span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Lois M. Black, and Margaret Mitchell. 2010. <a href="http://aut.sagepub.com/content/14/3/215.full.pdf">Computational prosodic markers for autism</a>. <i>Autism</i> 14:3, 215-236.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Jan van Santen, <span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, and Lois M. Black. 2009. <a href="http://portal.acm.org/citation.cfm?id=1577026">Automated assessment of prosody production</a>. <i>Speech Communication</i>, 51:11, 1082-1097.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Taniya Mishra, <span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, and Jan van Santen. 2007. <a href="http://www.isca-speech.org/archive_open/archive_papers/ssw6/ssw6_246.pdf">Word accentuation prediction using a neural net classifier.</a> In <i>Proceedings of the 6th ISCA Workshop on Speech Synthesis</i>, 246-251.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Bert Vaux, Justin Cooper, and <span style="font-weight: bold;">Emily Tucker</span>. 2007. <a href="http://www.amazon.com/Linguistic-Field-Methods-Bert-Vaux/dp/1597527645"><i>Linguistic Field Methods</i></a>. Eugene, Oregon: Wipf and Stock, 2007.</p>
+
+<br>
+
+      <div align="justify", style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><b>Refereed and invited conference presentations</b></div><br>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in"> Omar Tall**, Éric Le Ferrand*, Hunter Scheppat**, Joshua Hartshorne, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2025. Reclaiming Archival Texts with User-Friendly OCR. International Conference on Language Documentation and Conservation (ICLDC), Honolulu.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Joshua Hartshorne, Éric Le Ferrand*, Li-May Sung, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2024. FormosanBank and why you should use it. Architectures and Mechanisms in Language Processing (AMLaP), Edinburgh.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Joshua Hartshorne, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Li-May Sung, and Éric Le Ferrand*. 2024. Rapidly building the missing infrastructure for language science: A case study with Formosan languages. Crosslinguistic Perspectives on Processing and Learning (X-PPL), Zurich.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Jane Flanagan, M. Connolly, A. Coakley, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, M. Fugate, and C. Young. 2024. Understanding the Needs of Informal Caregivers of People Experiencing Dementia as Identified on Social Media. Gerontological Society of America 2024 Annual Scientific Meeting (GSA), Seattle.</p>
+      
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Joshua Hartshorne. 2023. Uncovering cross-linguistic morphosyntactic transfer in second-language learning. Many Paths to Language Conference (MPaL), Nijmegen, Netherlands.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Joshua Hartshorne, 2023. Uncovering crosslinguistic morphosyntactic transfer in second language learning. Boston University Conference on Language Development (BUCLD), Boston.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, Tiwalayo Eisape&dagger;, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Joshua Hartshorne. 2022. Uncovering crosslinguistic morphosyntactic transfer in second language learning. Architectures and Mechanisms of Language Processing (AMLaP), York, UK.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Zoey Liu*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Justin Spence. 2022. Automated Morphological Analysis of Hupa. Annual Meeting of the Society for the Study of the Indigenous Languages of the Americas (SSILA), virtual.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Christine Yang**, Dora Liu**, Alison Canfield, Christine Hoffkins, Jill Aldrich, Sarah Farash, Laura Silverman, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2021. Distinctive Features of Pragmatic Expression in Adults with ASD. Annual Conference of the International Society for Autism Research (INSAR-2021), virtual.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in"> Ethan Morris*, Robbie Jimerson*, and <span style="font-weight: bold;">Emily Prud'hommeaux</span>. 2021. Investigating the utility of custom ASR architectures for existing African language corpora. Second Workshop on African Natural Language Processing (AfricaNLP), virtual.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Richard Hatcher&dagger;, Robbie Jimerson*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Karin Michelson. 2021. Corpus Phonetic Investigation into Seneca Accentuation. International Conference on Language Documentation and Conservation (ICLDC-7), virtual.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Joseph Bochner, Vincent Samar, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Matt Huenerfauth, and Max Coppock. 2019. Categorical Perception in Cochlear Implant Users with Early-Onset Profound Deafness. The 31st Annual Convention of the Association for Psychological Science (APS), Washington, D.C.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud’hommeaux</span>, Robbie Jimerson*, Richard Hatcher&dagger;, Raymond Ptucha, and Karin Michelson. 2019.  On the promise andpitfalls of repurposing existing language technologies for endangered language documentation.  Language Technologies for All (LT4All):  Enabling Linguistic Diversity and Multilingualism Worldwide, UNESCO, Paris.</p>
+
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Robbie Jimerson*, Richard Hatcher&dagger;, Raymond Ptucha, and <span style="font-weight: bold;">Emily Prud’hommeaux</span>. 2019. Speech technology for supporting community-based endangered language documentation. International Conference on Language Documentation & Conservation (ICLDC), Honolulu.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Richard Hatcher&dagger;, Robbie Jimerson*, Whitney Nephew, Mike Jones, Julia Cordani&dagger;, Linnea Cremean&dagger;, and <span style="font-weight: bold;">Emily Prud’hommeaux</span>. 2019. Additional ways of integrating community-based language documentation and language revitalization. International Conference on Language Documentation & Conservation (ICLDC), Honolulu.</p>
+
+
+<p style="margin-left:.25in;text-indent:-.25in">Bert Vaux and <span style="font-weight: bold;">Emily T. Prud'hommeaux</span>. 2018. Structured variation in English L-allophony. Old World Conference on Phonology (OCP), London.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Cecilia O. Alm, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Benjamin Meyers**. 2016. Analyzing Discourse Patterns of Young Adults with ASD. International Meeting for Autism Research (IMFAR), Baltimore.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Preethi Vaidyanathan*, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Cecilia Alm. 2015. Computational integration of human vision and natural language through bitext alignment. EMNLP Workshop on Vision and Language Integration (VL'15), Lisbon.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Masoud Rouhizadeh&dagger;, Jan van Santen, Richard Sproat, Kyle Gorman, Peter Heeman, Alison Hill, Steven Bedrick, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Geza Kiss. 2014. Children’s Differing Patterns of Discourse Marker Use in ASD and Typical Development. International Meeting for Autism Research (IMFAR) 2014, Atlanta.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Jan van Santen, Alex Kain, Alison Hill, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, Rachel Ludovise, Cullen Conway, Gordon Keepers, and Eric Fombonne. 2014. Measurement of Crossmodal Integration of Expressive Affect Communication in Autism. International Meeting for Autism Research (IMFAR) 2014, Atlanta.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span>, Masoud Rouhizadeh&dagger;, Brian Roark, and Jan van Santen. 2013. Identifying Unexpected and Inappropriate Words in ASD Language Samples. International Meeting for Autism Research (IMFAR) 2013, San Sebasti&aacute;n, Spain.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">G&eacute;za Kiss&dagger;, Jan van Santen, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Lois M. Black. 2013. Intonation Differences of Children with ASD or SLI. International Meeting for Autism Research (IMFAR) 2013, San Sebasti&aacute;n, Spain</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Jan van Santen, Beth Langhorst, Alison Hill, Cullen Conway, Robbyn Sanger-Hahn, Gordon Keepers, Meredith Parmer, Rachel Ludovise, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and G&eacute;za Kiss&dagger;. 2013. A Computerized Interactive Game for Remediation of Prosody in Children with Autism. International Meeting for Autism Research (IMFAR) 2013, San Sebasti&aacute;n, Spain.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily Prud'hommeaux</span>, Brian Roark, Lois M. Black, and Jan van Santen. 2012. <a href="posters/Prudhommeaux-IMFAR2012.pdf">Identifying features of ASD language impairment in narrative retellings</a>.  International Meeting for Autism Research (IMFAR) 2012, Toronto, Ontario.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">G&eacute;za Kiss, Jan van Santen, <span style="font-weight: bold;">Emily Prud'hommeaux</span>, and Lois M. Black. 2012. Quantitative analysis of prosody in conversational speech in autism spectrum disorders and in developmental language disorders. International Meeting for Autism Research (IMFAR) 2012, Toronto, Ontario.
+
+<p style="margin-left:.25in;text-indent:-.25in">Richard Sproat, Lois M. Black, <span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Jan van Santen, and Brian Roark. 2011. <a href="posters/Sproat-IMFAR2011.pdf">Automated analysis of natural language samples: Comparison of children with ASD, DLD, and TD</a>. International Meeting for Autism Research (IMFAR) 2011, San Diego, California. 
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Margaret Mitchell, and Brian Roark. 2011. <a href="posters/icta-prudhommeaux.pdf">Using patterns of narrative recall for improved detection of mild cognitive impairment</a>. International Conference on Technology and Aging (ICTA) 2011, Toronto, Ontario.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Jan van Santen, Lois M. Black, and Brian Roark. 2010. <a href="posters/PrudhommeauxIMFAR2010.pdf">Automatic detection of idiosyncratic word use in autism spectrum disorders</a>. International Meeting for Autism Research (IMFAR) 2010, Philadelphia, Pennsylvania.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Bert Vaux and <span style="font-weight: bold;">Emily T. Prud'hommeaux</span> 2010. Nanovariation in English L allophony. Sixth North American Phonology Conference (NAPhC 6), Montreal, Quebec.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prudhommeaux</span>. 2010. <a href="posters/NWNLP2010Prudhommeaux.pdf">Toward automatic scoring and alignment of narrative recall</a>. Pacific Northwest Regional NLP Workshop (NW-NLP 2010), Seattle, Washington.</p>
+<!--p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux 2009. <a href="http://talks.cam.ac.uk/talk/index/21354">Automated measures for assessment of prosody in autism</a>. King's College, University of Cambridge (UK), November 2009.</p-->
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Jan van Santen, and Lois M. Black. 2009. <a href="posters/IMFAR2009Prudhommeaux.pdf">Automated acoustic analysis of affective and pragmatic prosody in ASD</a>. International Meeting for Autism Research (IMFAR) 2009, Chicago, Illinois.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Jan van Santen, and Lois M. Black. 2009. <a href="posters/IMFAR2009Prudhommeaux2.pdf">Automated identification of stress and focus assignment</a>. International Meeting for Autism Research (IMFAR) 2009, Chicago, Illinois.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Jan van Santen, <span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Rhea Paul, Lois M. Black, and Lawrence Shriberg. 2008. Expressive prosody in autism: Effects of prosody function and processing demands. International Meeting for Autism Research (IMFAR) 2008, London, England.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in"><span style="font-weight: bold;">Emily T. Prud'hommeaux</span>, Jan van Santen, Rhea Paul, and Lois M. Black. 2008. <a href="posters/IMFAR2008-Prudhommeaux.pdf">Automated measurement of expressive prosody in neurodevelopmental disorders</a>.  International Meeting for Autism Research (IMFAR) 2008, London, England.</p>
+
+<p style="margin-left:.25in;text-indent:-.25in">Jan van Santen, Rhea Paul, Lois M. Black, and <span style="font-weight: bold;">Emily Tucker</span>. 2007. Quantitative analysis of grammatical and pragmatic prosody in autism spectrum disorder.  International Meeting for Autism Research (IMFAR) 2007, Seattle, Washington.</p>
+
+
 
 
 
