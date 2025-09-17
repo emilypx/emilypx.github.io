@@ -14,6 +14,8 @@ redirect_from:
 
 **Email:** prudhome@bc.edu
 
+**Office Hours Fall 2025:** Monday 11am-noon, Wednesday 12:30-1:30pm (subject to change)
+
 My research area is natural language processing (NLP) in low-resource settings, with a particular focus on endangered languages, child language, and the language of individuals with conditions impacting communication and cognition. Before coming to BC, I was an assistant professor at RIT, where I co-founded the Computational Linguistics and Speech Processing lab. Before that I was a postdoc at the University of Rochester, and before getting my PhD at the former OGI (now OHSU), I worked for several years in the language modeling group at Nuance.
 
 
