@@ -15,9 +15,9 @@ redirect_from:
 **Email:** prudhome@bc.edu
 
 
-My research area is natural language processing (NLP) in low-resource settings, with a particular focus on endangered languages, child language, and the language of individuals with conditions impacting communication and cognition. Before coming to BC, I was an assistant professor at RIT, where I co-founded the Computational Linguistics and Speech Processing lab. Before that I was a postdoc at the University of Rochester, and before getting my PhD at the former OGI (now OHSU), I worked for several years in the language modeling group at Nuance.
+My research area is natural language processing (NLP) in low-resource settings, with a particular focus on endangered languages, child language, and the language of individuals with conditions impacting communication and cognition. Before coming to BC, I was an assistant professor at RIT, where I co-founded the Computational Linguistics and Speech Processing lab. Before that I was a postdoc at the University of Rochester, and before getting my PhD at the former OGI (now OHSU) with Brian Roark and Jan van Santen, I worked for several years in the language modeling group at Nuance (now Microsoft).
 
-I'm also Director of the interdisciplinary Data Science Minor. You can learn all about this minor on the [CS Department academics programs web page](https://www.bc.edu/bc-web/schools/morrissey/departments/computer-science/academics/programs.html#tab-data_science_minor).
+I'm also Director of the interdisciplinary Data Science Minor. You can learn all about this minor on the [CS Department academic programs web page](https://www.bc.edu/bc-web/schools/morrissey/departments/computer-science/academics/programs.html#tab-data_science_minor).
 
 
 ## Recent News
