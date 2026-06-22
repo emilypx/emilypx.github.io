@@ -24,6 +24,8 @@ I'm also Director of the interdisciplinary Data Science Minor. You can learn all
 
 6/2026: REU Margaret Berkely was awarded a Fulbright to teach English Mexico next year. Congrats, Maggie!
 
+6/2026: REU and McNair Scholar Farhan Sreejan was awarded an Advanced Study Grant!
+
 5/2026: REU and senior thesis student Nicholas Hernandez will be starting the MS program in Computer Science at Georgia Tech in the fall. Congrats, Nico!
 
 12/2025: RA [Hunter Scheppat](https://hunterschep.github.io/website/) made an amazing [tutorial for fine-tuning NLLB to a new language pair](https://medium.com/@hunterschep/fine-tuning-nllb-200-for-a-new-language-in-2025-fcae209d9980). 
