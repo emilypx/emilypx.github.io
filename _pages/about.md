@@ -22,9 +22,9 @@ I'm also Director of the interdisciplinary Data Science Minor. You can learn all
 
 ## Recent News
 
-6/2026: REU Margaret Berkely was awarded a Fulbright to teach English Mexico next year. Congrats, Maggie!
+6/2026: REU Margaret Berkely was awarded a Fulbright to teach English in Mexico next year. Congrats, Maggie!
 
-6/2026: REU and McNair Scholar Farhan Sreejan was awarded an Advanced Study Grant!
+6/2026: REU and McNair Scholar Farhan Sreejan was awarded an Advanced Study Grant to study Irish ASR. Congrats, Farhan!
 
 5/2026: REU and senior thesis student Nicholas Hernandez will be starting the MS program in Computer Science at Georgia Tech in the fall. Congrats, Nico!
 
