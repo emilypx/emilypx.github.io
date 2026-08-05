@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-**Office:** 245 Beacon, CS Department, 4th Floor
+**Office:** Hayden Hall (formerly 245 Beacon), CS Department, 4th Floor
 
 **Telephone:** 617-552-3928
 
