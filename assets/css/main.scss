@@ -41,3 +41,14 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* --- custom overrides below --- */
+
+.page__footer {
+  clear: both;
+}
+
+.page__footer-copyright {
+  text-align: center;
+  padding: 1em 0;
+}
